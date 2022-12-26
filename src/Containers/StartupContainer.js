@@ -28,8 +28,7 @@ const StartupContainer = () => {
   return (
     <View style={[Layout.fill, Layout.colCenter]}>
       <Brand />
-      <ActivityIndicator size={'large'} style={[Gutters.largeVMargin]} />
-      <Text style={Fonts.textCenter}>{t('welcome')}</Text>
+      <Text style={Fonts.textCenter}>This app will get u DRUNK &#x1F37A;</Text>
     </View>
   )
 }

@@ -13,14 +13,19 @@ export const Colors = {
   transparent: 'rgba(0,0,0,0)',
   inputBackground: '#FFFFFF',
   white: '#ffffff',
+  black: '#000000',
   text: '#212529',
-  primary: '#E14032',
+  primary: '#FFDF2B',
   success: '#28a745',
   error: '#dc3545',
 }
 
 export const NavigationColors = {
   primary: Colors.primary,
+  background: Colors.black,
+  card: Colors.black,
+  text: Colors.primary,
+  border: Colors.transparent,
 }
 
 /**
