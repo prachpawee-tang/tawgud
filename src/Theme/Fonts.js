@@ -49,5 +49,8 @@ export default function ({ FontSize, Colors }) {
     textRight: {
       textAlign: 'right',
     },
+    textDark: {
+      color: Colors.black,
+    },
   })
 }
