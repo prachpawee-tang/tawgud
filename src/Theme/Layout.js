@@ -5,7 +5,7 @@ import { StyleSheet } from 'react-native'
  * @param Theme can be spread like {Colors, NavigationColors, Gutters, Layout, Common, ...args}
  * @return {*}
  */
-export default function () {
+export default function ({ MetricsSizes }) {
   return StyleSheet.create({
     /* Column Layouts */
     column: {
@@ -105,5 +105,35 @@ export default function () {
     rotate90Inverse: {
       transform: [{ rotate: '-90deg' }],
     },
+    /* Layout border */
+    ...Object.entries(MetricsSizes).reduce(
+      (acc, [key, value]) => ({
+        ...acc,
+        [`${key}Border`]: {
+          border: value,
+        },
+        [`${key}TLBorder`]: {
+          borderTopLeftRadius: value,
+        },
+        [`${key}TRBorder`]: {
+          borderTopRightRadius: value,
+        },
+        [`${key}BLBorder`]: {
+          borderBottomLeftRadius: value,
+        },
+        [`${key}BRBorder`]: {
+          borderBottomRightRadius: value,
+        },
+        [`${key}TBorder`]: {
+          borderTopLeftRadius: value,
+          borderTopRightRadius: value,
+        },
+        [`${key}BBorder`]: {
+          borderBottomLeftRadius: value,
+          borderBottomRightRadius: value,
+        },
+      }),
+      {},
+    ),
   })
 }

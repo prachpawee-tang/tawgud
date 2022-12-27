@@ -10,9 +10,9 @@ import buttonStyles from './components/Buttons'
  * @param Theme can be spread like {Colors, NavigationColors, Gutters, Layout, Common, ...args}
  * @return {*}
  */
-export default function ({ Colors, ...args }) {
+export default function ({ Colors, FontSize, ...args }) {
   return {
-    button: buttonStyles({ Colors, ...args }),
+    button: buttonStyles({ Colors, FontSize, ...args }),
     ...StyleSheet.create({
       backgroundPrimary: {
         backgroundColor: Colors.primary,
@@ -21,14 +21,14 @@ export default function ({ Colors, ...args }) {
         backgroundColor: Colors.transparent,
       },
       textInput: {
-        borderWidth: 1,
-        borderColor: Colors.text,
-        backgroundColor: Colors.inputBackground,
-        color: Colors.text,
+        borderWidth: 3,
+        borderColor: Colors.gray,
+        borderRadius: 10,
+        color: Colors.primary,
         minHeight: 50,
-        textAlign: 'center',
-        marginTop: 10,
-        marginBottom: 10,
+        marginVertical: 10,
+        paddingLeft: 20,
+        fontSize: FontSize.regular,
       },
     }),
   }

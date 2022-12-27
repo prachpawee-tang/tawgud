@@ -18,7 +18,13 @@ const StartupContainer = () => {
       }, 2000),
     )
     await setDefaultTheme({ theme: 'default', darkMode: null })
-    navigateAndSimpleReset('Main')
+
+    const mock_isAuth = false
+    if (mock_isAuth) {
+      navigateAndSimpleReset('Main')
+    } else {
+      navigateAndSimpleReset('Auth')
+    }
   }
 
   useEffect(() => {

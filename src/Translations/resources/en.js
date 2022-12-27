@@ -9,4 +9,10 @@ export default {
       userId: 'Enter a user id',
     },
   },
+  auth: {
+    signIn: 'Sign in',
+    signUp: 'Sign up',
+    email: 'E-mail',
+    password: 'Password',
+  },
 }

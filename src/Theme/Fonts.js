@@ -25,17 +25,17 @@ export default function ({ FontSize, Colors }) {
     titleSmall: {
       fontSize: FontSize.small * 2,
       fontWeight: 'bold',
-      color: Colors.text,
+      color: Colors.primary,
     },
     titleRegular: {
       fontSize: FontSize.regular * 2,
       fontWeight: 'bold',
-      color: Colors.text,
+      color: Colors.primary,
     },
     titleLarge: {
       fontSize: FontSize.large * 2,
       fontWeight: 'bold',
-      color: Colors.text,
+      color: Colors.primary,
     },
     textCenter: {
       textAlign: 'center',
@@ -51,6 +51,9 @@ export default function ({ FontSize, Colors }) {
     },
     textDark: {
       color: Colors.black,
+    },
+    textPrimary: {
+      color: Colors.primary,
     },
   })
 }

@@ -12,7 +12,7 @@ const MainNavigator = () => {
         name="Home"
         component={ExampleContainer}
         options={{
-          tabBarIconStyle: { display: 'none' },
+          // tabBarIconStyle: { display: 'none' },
           tabBarLabelPosition: 'beside-icon',
         }}
       />
